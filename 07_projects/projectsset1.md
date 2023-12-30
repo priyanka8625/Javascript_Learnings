@@ -1,7 +1,11 @@
 # Projects related to DOM
 
 ## project link
-[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
+<!-- project directory without solution -> given by sir -->
+<!-- [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html) -->
+
+<!-- my project directory -->
+[Click Here](https://stackblitz.com/edit/dom-project-chaiaurcode-lrngpj?file=index.html)
 
 # Solution code
 
