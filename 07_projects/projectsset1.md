@@ -5,7 +5,7 @@
 
 # Solution code
 
-## project 1
+## project 1 Solution
 
 ```javascript
 console.log("hitesh")
@@ -180,7 +180,7 @@ function newGame() {
 ```
 
 
-# Project 5 solution
+## Project 5 solution
 
 ```javascript
 const insert = document.getElementById('insert');
@@ -208,7 +208,7 @@ window.addEventListener('keydown', (e) => {
 
 ```
 
-# Project 6 Solution
+## Project 6 Solution
 
 ```javascript
 //generate a random color
