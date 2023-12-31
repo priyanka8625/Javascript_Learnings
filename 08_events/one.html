@@ -23,21 +23,25 @@
     //     alert("owl clicked")
     // }
 
-     // attachEvent()
+    //another way of adding event in Javascript earlier in Internet explorer
+    // attachEvent()
     // jQuery - on
 
-    // type, timestamp, defaultPrevented
+    //study these event object properties, very IMP from interview perspective 
+    // type, timestamp, preventDefault
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+    // BEST way of handling events
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation()
+    //     e.stopPropagation() //to prevent event propagation i.e. event bubbling or event capturing as per the boolean value provided in addEventListener()
+    //     //false -> bubbling(child to parent event triggered), true->capturing(parent to child event triggered)
     // }, false)
     
     // document.getElementById('google').addEventListener('click',function(e){
@@ -48,16 +52,15 @@
    
     
     document.querySelector('#images').addEventListener('click', function(e){
+        //remove the images when user clicks on images
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
-            let removeIt = e.target.parentNode
+            let removeIt = e.target.parentNode//returns the parent node of the element which has been clicked i.e. target, for img tag li will be parentNode
             removeIt.remove()
         }
-    
-        
     })
     
-    //removeIt.parentNode.removeChild(removeIt)
+    //removeIt.parentNode.removeChild(removeIt) //alternate way of removing an element
 </script>
 </html>
